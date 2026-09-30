@@ -1,0 +1,16 @@
+try:
+    # 1. запрос
+    num1_str = input("введите первое число: ")
+    num2_str = input("введите второе число: ")
+
+    # 2. преобразование
+    num1 = int(num1_str)
+    num2 = int(num2_str)
+
+    # 3. сложение
+    result = num1 + num2
+    print(f"Результат сложения: {result}")
+
+except ValueError:
+    # ошибка
+    print("ошибка: число не целое!")
