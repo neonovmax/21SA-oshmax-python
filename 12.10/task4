@@ -1,0 +1,20 @@
+try:
+    stlb_1 = int(input("cтолбец 1 клетки: "))
+    str_1 = int(input("Строка 1 клетки: "))
+    stlb_2 = int(input("cтолбец 2 клетки: "))
+    str_2 = int(input("cтрока 2 клетки: "))
+
+    if not (1 <= stlb_1 <= 8 and
+            1 <= str_1 <= 8 and
+            1 <= stlb_2 <= 8 and
+            1 <= str_2 <= 8):
+        print("ошибка")
+
+    elif abs(stlb_1 - stlb_2) == abs(str_1 - str_2):
+        print("YES")
+
+    else:
+        print("NO")
+
+except ValueError:
+    print("ошибка")
